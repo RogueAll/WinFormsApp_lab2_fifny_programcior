@@ -19,10 +19,11 @@ namespace WinFormsApp_lab2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button3_Click(sender,e);
             Form1 f1 = new Form1();
             f1.Show();
             Visible = false;
-            int BDSM = int.Parse(label3.Text);
+            //int BDSM = int.Parse(label3.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
