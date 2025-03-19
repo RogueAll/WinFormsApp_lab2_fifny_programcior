@@ -19,6 +19,7 @@ namespace WinFormsApp_lab2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            GlobalVariables.Cost_3 = label1.Text;
             Form1 f1 = new Form1();
             f1.Show();
             Visible = false;
@@ -68,6 +69,11 @@ namespace WinFormsApp_lab2
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
             label1.Text = "1";
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

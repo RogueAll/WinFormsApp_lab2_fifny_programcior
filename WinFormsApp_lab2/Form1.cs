@@ -23,7 +23,13 @@ namespace WinFormsApp_lab2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            int temp1, temp2, temp3, out_p;
+            temp1 = int.Parse(GlobalVariables.Cost_1);
+            //temp2 = int.Parse(GlobalVariables.Cost_2);
+            temp3 = int.Parse(GlobalVariables.Cost_3);
+            out_p = temp1 + /*temp2 +*/ temp3;
+            GlobalVariables.Cost_4 = out_p.ToString();
+            button2.Text = GlobalVariables.Cost_4;
         }
     }
 }

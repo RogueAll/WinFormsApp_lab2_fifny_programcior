@@ -19,7 +19,8 @@ namespace WinFormsApp_lab2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button3_Click(sender,e);
+            GlobalVariables.Cost_2 = label1.Text;
+            button3_Click(sender, e);
             Form1 f1 = new Form1();
             f1.Show();
             Visible = false;
@@ -58,8 +59,18 @@ namespace WinFormsApp_lab2
             int uno = int.Parse(label1.Text);
             int dos = int.Parse(label2.Text);
             int tres = uno + dos;
-            string out_put = tres.ToString();
-            label3.Text = out_put;
+            GlobalVariables.Cost_1 = tres.ToString();
+            label3.Text = GlobalVariables.Cost_1;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

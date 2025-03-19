@@ -96,6 +96,7 @@
             label2.Size = new Size(13, 15);
             label2.TabIndex = 5;
             label2.Text = "0";
+            label2.Click += label2_Click;
             // 
             // button3
             // 
@@ -115,6 +116,7 @@
             label3.Size = new Size(38, 15);
             label3.TabIndex = 7;
             label3.Text = "label3";
+            label3.Click += label3_Click;
             // 
             // Form2
             // 
